@@ -8,6 +8,8 @@ const express = require('express'),
 const app = express()
 
 const userRoutes = require('./routes/user')
+const carRoutes = require('./routes/car')
+
 
 // connection DB
 mongoose.Promise = global.Promise
@@ -24,7 +26,9 @@ app.use(morgan('dev'))
 app.use(bodyParser.json())
 
 // routes
-app.use('/user', userRoutes)
+app.use('/users', userRoutes)
+app.use('/cars', carRoutes)
+
 
 // static file
 

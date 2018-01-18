@@ -4,17 +4,17 @@ const express = require('express'),
 
 const {
   index,
-  add,
+  // add,
   getOne,
   update,
   remove,
   getUserCars,
   newUserCar
-} = require('../controllers/user')
+} = require('../controllers/car')
 
 router.get('/', index)
 router.get('/:id', getOne)
-router.post('/', add)
+// router.post('/', add)
 router.put('/:id', update)
 router.delete('/:id', remove)
 router.get('/:id/cars', getUserCars)
