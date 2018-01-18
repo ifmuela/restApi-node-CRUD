@@ -1,0 +1,29 @@
+{
+  "name": "rest-api-node",
+  "version": "0.0.1",
+  "description": "API REST usando Node.JS Express y MongoBD",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "rest",
+    "node.js",
+    "express",
+    "mongodb"
+  ],
+  "author": "ifmuela",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-promise-router": "^2.0.0",
+    "mongoose": "^4.13.9",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.11"
+  }
+}
